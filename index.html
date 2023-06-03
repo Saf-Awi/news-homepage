@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | News homepage</title>
+
+
+</head>
+<body>
+  <!-- header content -->
+  <header id="header">
+    <picture>
+      <img src="./assets/images/logo.svg" alt="logo" class="w-logo">
+    </picture>
+    
+    <div class="desktop-nav">
+
+      <nav id="navbar">
+        <ul>
+          <li><a href="#" class="nav-a">Home</a></li>
+          <li><a href="#" class="nav-a">New</a></li>
+          <li><a href="#" class="nav-a">Popular</a></li>
+          <li><a href="#" class="nav-a">Trending</a></li>
+          <li><a href="#" class="nav-a">Categories</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="mobile-nav">
+
+      <button id="open-btn">
+        <img src="./assets/images/icon-menu.svg" alt="open button">
+      </button>
+
+      <nav id="sidebar">
+        <button id="close-btn">
+          <img src="./assets/images/icon-menu-close.svg" alt="close button">
+        </button>
+
+        <ul id="sidebar-ul">
+          <li><a href="#" class="nav-a">Home</a></li>
+          <li><a href="#" class="nav-a">New</a></li>
+          <li><a href="#" class="nav-a">Popular</a></li>
+          <li><a href="#" class="nav-a">Trending</a></li>
+          <li><a href="#" class="nav-a">Categories</a></li>
+        </ul>
+
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- main content -->
+  <main id="main">
+    <div id="overlay"></div>
+    <section class="top-section-container">
+      <div class="top-div-left">
+        <div class="main-img-div">
+          <figure class="main-img main-img-fig">
+            <img src="./assets/images/image-web-3-desktop.jpg" alt="web main image desktop version" class="main-img main-img-desktop">
+            <img src="./assets/images/image-web-3-mobile.jpg" alt="main image mobile version" class="main-img main-img-mobile">
+          </figure>
+        </div>
+
+        <div class="top-text-header-container">
+          <h1 class="bright-future-header">The Bright Future of Web 3.0?
+          </h1>
+
+          <div class="text-btn-div">
+            <p class="text">
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?
+            </p>
+            <button class="btn">READ MORE</button>
+          </div>
+        </div>
+      </div>
+      <div class="top-div-right questions-div">
+        <div class="questions">
+        <h1 class="new">New</h1>
+        <div class="quest-1">
+          <a href="#" class="quest-1-header quest-header">
+            <h2 class="quest-1-header quest-header">Hydrogen VS Electric Cars</h2>
+          </a>
+          <p class="quest-1-p quest-p">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <div class="divider"></div>
+        <div class="quest-2">
+          <a href="#" class="quest-1-header quest-header">
+            <h2 class="quest-2-header quest-header">The Downsides of AI Artistry</h2>
+          </a>
+          <p class="quest-2-p quest-p">What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <div class="divider"></div>
+        <div class="quest-3">
+          <a href="#" class="quest-1-header quest-header"><h2 class="quest-3-header quest-header">Is VC Funding Drying Up?</h2></a>
+          <p class="quest-3-p quest-p">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bottom-section-container">
+      <div class="bottom-01 reviving-retro">
+        <figure class="retro-pc retro-fig">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="reviving retro image" class="retro-img retro-pc">
+        </figure>
+        <div class="bottom-01-text">
+          <h2 class="h01-h2">01</h2>
+          <a href="#" class="h01-h3 bottom-h3"><h3 class="h01-h3 bottom-h3">Reviving Retro PCs</h3></a>
+          <p class="h01-p">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+
+      <div class="bottom-02">
+        <figure class="laptop laptop-fig">
+          <img src="./assets/images/image-top-laptops.jpg" alt="laptop keyboard image" class="laptop-img laptop">
+        </figure>
+        <div class="bottom-02-text">
+          <h2 class="h02-h2">02</h2>
+          <a href="#" class="h02-h3 bottom-h3"><h3 class="h02-h3 bottom-h3">Top 10 Laptops of 2022</h3></a>
+          <p class="h02-p">Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+
+      <div class="bottom-03">
+        <figure class="growth-gaming growth-gaming-fig">
+          <img src="./assets/images/image-gaming-growth.jpg" alt="growth gaming image" class="growth-gaming growth-gaming-img">
+        </figure>
+        <div class="bottom-03-text">
+          <h2 class="h03-h2">03</h2>
+          <a href="#" class="h03-h3 bottom-h3"><h3 class="h03-h3 bottom-h3">The Growth of Gaming</h3></a>
+          <p class="h03-p">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!-- footer content -->
+  <footer id="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Safa Al-Hilo</a>.
+    </div>
+  </footer>
+
+  
+
+
+  <script src="app.js"></script>
+</body>
+</html>

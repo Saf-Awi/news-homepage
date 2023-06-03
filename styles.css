@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root {
+    --primary-clr-Soft-orange: hsl(35, 77%, 62%);
+    --primary-clr-Soft-red: hsl(5, 85%, 63%);
+    --neutral-clr-Off-white: hsl(36, 100%, 99%);
+    --neutral-clr-Grayish-blue: hsl(233, 8%, 79%);
+    --neutral-clr-Dark-grayish-blue: hsl(236, 13%, 42%);
+    --neutral-clr-Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+
+
+body {
+    /*--- overflow: hidden;---*/
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--neutral-clr-Off-white);
+    color: var(--neutral-clr-Dark-grayish-blue);
+    
+    
+}
+
+
+/*--- header content---*/
+
+.mobile-nav {
+    display: none;
+}
+
+
+.desktop-nav {
+    display: flex;
+    margin-top: 20px;
+
+}
+
+#navbar {
+    position: relative;
+    left: 300px;
+
+
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    
+}
+
+.nav-a {
+    text-decoration: none;
+    color: var(--neutral-clr-Dark-grayish-blue);
+    margin-left: 30px;
+
+}
+
+.nav-a:hover, .nav-a:active {
+    color: var(--primary-clr-Soft-red);
+}
+
+picture {
+    position: absolute;
+    top: 30px;
+    left: 150px;
+   
+   
+}
+
+
+/*--- main content---*/
+#overlay {
+    display: none;
+}
+.main-img-mobile {
+    display: none;
+}
+
+.main-img-desktop {
+    width: 720px;
+    height: auto;
+}
+
+.top-section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.top-text-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.text-btn-div {
+    width: 300px;
+}
+
+.bright-future-header {
+    font-size: 50px;
+    font-weight: 700;
+    width: 300px;
+    color: var(--neutral-clr-Very-dark-blue);
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.text-btn-div {
+    width: 320px;
+    margin-top: -70px;
+    margin-right: 40px;
+}
+
+
+.btn {
+    background-color: var(--primary-clr-Soft-red);
+    color: var(--neutral-clr-Off-white);
+    border: none;
+    width: 150px;
+    height: 30px;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover, .btn:active {
+    background-color: var(--neutral-clr-Very-dark-blue);
+    cursor: pointer;
+}
+
+.questions-div {
+    color: var(--neutral-clr-Grayish-blue);
+    background-color: var(--neutral-clr-Very-dark-blue);
+    width: 300px;
+    padding: 10px 20px;
+    margin-right: 0;
+    margin-top: -69px;
+}
+
+.new {
+    color: var(--primary-clr-Soft-orange);
+    font-size: 30px;
+}
+
+.quest-header {
+    text-decoration: none;
+    color: var(--neutral-clr-Grayish-blue);
+}
+
+.quest-header:hover, .quest-header:active {
+    color: var(--primary-clr-Soft-orange);
+}
+
+.quest-p {
+    color: var(--neutral-clr-Dark-grayish-blue);
+}
+
+.divider {
+    width: 300px;
+    height: 1px;
+    background-color: var(--neutral-clr-Dark-grayish-blue);
+}
+
+.bottom-section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;    
+}
+
+.bottom-01, .bottom-02, .bottom-03 {
+    display: flex;
+}
+
+.retro-pc, .laptop, .growth-gaming {
+    height: 120px;
+    width: auto;
+    margin-right: 10px;
+
+}
+
+.bottom-h3 {
+    text-decoration: none;
+    color: var(--neutral-clr-Very-dark-blue);
+}
+
+.bottom-h3:hover, .bottom-h3:active {
+    color: var(--primary-clr-Soft-red);
+}
+
+
+.h01-h2, .h02-h2, .h03-h2 {
+    color: var(--neutral-clr-Grayish-blue);
+}
+
+.h01-p, .h02-p, .h03-p {
+    width: 210px;
+}
+
+/*--- footer content---*/
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    margin-top: 30px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+ }
+/*--- mobile view---*/
+
+@media screen and (max-width: 768px) {
+
+
+    body {
+        display: block;
+        width: 100%;        
+
+    }
+
+    #overlay {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.5); 
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /*--- mobile header content---*/
+
+    .desktop-nav {
+        display: none;
+    }
+
+
+    picture {
+        position: relative;
+        top: 20px;
+        left: 90px;
+
+    }
+
+    .mobile-nav {
+        display: flex;
+        
+    }
+
+    button {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    #sidebar {
+        position: fixed;
+        background-color: white;
+        right: 10px;
+        top: 0;
+        right: 0;
+        width: 40vh;
+        height: 100%;
+        z-index: 9999;
+        transition: all 0.3s ease-in-out;
+
+       
+       
+       
+    }
+
+    #sidebar-ul {
+        list-style: none;   
+        position: absolute;
+        top: 20%;
+        transform: translateY(50%);
+        
+    }
+
+   #sidebar-ul li {
+    margin-top: 25px;
+    
+   }
+
+   #nav-a {
+    color: var(--neutral-clr-Very-dark-blue);
+    
+   }
+
+   #close-btn {
+    position: absolute;
+    top: 50px;
+    right: 65px;
+   }
+
+   #open-btn {
+    position: relative;
+    left: 370px;
+    z-index: 99;
+   }
+
+
+
+
+
+    /*--- mobile main content---*/
+
+    .main-img-mobile {
+        display: inline-block;
+        width: 350px;
+    }
+    
+    .main-img-desktop {
+        display: none;
+    }
+
+    .top-section-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-text-header-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bright-future-header {
+        margin-bottom: 80px;
+        margin-left: -50px;
+        text-align: left;
+        font-size: 40px;
+    }
+
+    .text-btn-div {
+        margin-bottom: 150px;
+        margin-left: 20px;
+    }
+
+    .bottom-section-container {
+        display: flex;
+        flex-direction: column;
+        margin-right: 90px;
+    }
+
+    /*--- mobile footer content---*/
+   
+}
